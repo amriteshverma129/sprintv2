@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container{
+    background-color: rgb(206, 247, 247);
+    position: relative;
+    padding: 30px;
+    .heading{
+        padding:20px;
+        background-color: white;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .sprintBox{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        >div{
+            width:100%;
+            margin:20px 10px;
+            text-align:start;
+            background-color: white;
+            padding:10px;
+           >span{
+               display: block;
+               margin-bottom: 10px;
+           }
+          .taskBox{
+              min-height: 20px;
+              padding-bottom: 30px;
+            .task{
+                margin:10px;
+                padding:5px;
+                border:1px solid grey;
+                border-radius: 3px;
+                font-size: 14px;
+                &:hover{
+                    box-shadow: 2px 2px 2px 2px rgb(201, 200, 200);
+                }
+                .priority_low{
+                    padding:3px;
+                     color: rgb(46, 131, 170);
+                     background-color: rgb(217, 234, 241);
+                     margin: 5px 0px;
+                  }
+                  .priority_hard{
+                    padding:3px;
+                     color:red;
+                     background-color: rgb(247, 235, 235);
+                  }
+                  .priority_medium{
+                      color:orange;
+                      padding:3px;
+                      background-color: rgb(238, 228, 211);
+                  }
+                  .taskFont{
+                    font-weight: 700;
+                  }
+              }
+          }
+          }
+    }
+}
+
+.draggable{
+    background-color: orange;
+    color:white;
+    margin:5px;
+    padding:5px;
+    cursor:move;
+}

@@ -1,0 +1,97 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  background-color: #cef7f7;
+  position: relative;
+  padding: 30px;
+}
+
+.container .heading {
+  padding: 20px;
+  background-color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.container .sprintBox {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .sprintBox > div {
+  width: 100%;
+  margin: 20px 10px;
+  text-align: start;
+  background-color: white;
+  padding: 10px;
+}
+
+.container .sprintBox > div > span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.container .sprintBox > div .taskBox {
+  min-height: 20px;
+  padding-bottom: 30px;
+}
+
+.container .sprintBox > div .taskBox .task {
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.container .sprintBox > div .taskBox .task:hover {
+  -webkit-box-shadow: 2px 2px 2px 2px #c9c8c8;
+          box-shadow: 2px 2px 2px 2px #c9c8c8;
+}
+
+.container .sprintBox > div .taskBox .task .priority_low {
+  padding: 3px;
+  color: #2e83aa;
+  background-color: #d9eaf1;
+  margin: 5px 0px;
+}
+
+.container .sprintBox > div .taskBox .task .priority_hard {
+  padding: 3px;
+  color: red;
+  background-color: #f7ebeb;
+}
+
+.container .sprintBox > div .taskBox .task .priority_medium {
+  color: orange;
+  padding: 3px;
+  background-color: #eee4d3;
+}
+
+.container .sprintBox > div .taskBox .task .taskFont {
+  font-weight: 700;
+}
+
+.draggable {
+  background-color: orange;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  cursor: move;
+}
+/*# sourceMappingURL=sprint.css.map */
